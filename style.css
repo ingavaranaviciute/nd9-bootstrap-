@@ -1,0 +1,98 @@
+html, body, #container {
+  min-height: 100%;
+  font-family: Verdana, sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100%;
+  margin: 0; }
+
+header {
+  overflow: hidden;
+  width: 100%;
+  background-color: #2E2E2E;
+  padding: 15px;
+  position: fixed;
+  opacity: .7;
+  top: 0; }
+  header:hover {
+    opacity: 1; }
+  header .topTitle {
+    color: grey;
+    float: left; }
+    header .topTitle h1 {
+      font-size: 20px;
+      line-height: 1;
+      margin: 0;
+      display: block; }
+    header .topTitle h2 {
+      font-size: 10px;
+      line-height: 1;
+      margin: 0;
+      display: block; }
+  header .topNav {
+    background-color: black;
+    float: right;
+    font-size: 10px;
+    padding: 10px 10px; }
+    header .topNav a {
+      color: grey;
+      text-decoration: none;
+      font-size: 15px;
+      padding-right: 10px; }
+      header .topNav a:last-child {
+        padding-right: 0; }
+
+#container {
+  overflow: hidden;
+  margin-top: 70px; }
+  #container .placeholder {
+    background-color: #2E2E2E;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    height: 360px;
+    margin-top: 15px;
+    overflow: hidden; }
+    #container .placeholder span {
+      color: white;
+      font-size: 20px;
+      display: block;
+      margin-top: 170px; }
+  #container .info {
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 20px 0; }
+    #container .info .post .postHeader {
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
+    #container .info .post .thumbnail {
+      width: 32px;
+      height: 32px;
+      background-color: #2E2E2E;
+      margin-bottom: 0;
+      border: none; }
+      #container .info .post .thumbnail .size {
+        color: white;
+        font-size: 8px;
+        text-align: center;
+        display: block; }
+    #container .info .post h3 {
+      display: block;
+      font-size: 15px;
+      margin: 0;
+      font-weight: bold;
+      margin-left: 10px; }
+    #container .info .post .postContent {
+      margin-top: 5px; }
+      #container .info .post .postContent a {
+        float: right;
+        color: orange; }
+        #container .info .post .postContent a:after {
+          content: " \00BB"; }
+
+/*# sourceMappingURL=style.css.map */
