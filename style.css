@@ -134,6 +134,17 @@ section {
             display: block; }
       section .articles article .text {
         margin-left: 200px; }
+  section .categories .categoriesTitle p {
+    border-bottom: 1px dashed darkgray; }
+    section .categories .categoriesTitle p i {
+      font-size: 6px;
+      position: relative;
+      top: -3px;
+      color: orange; }
+    section .categories .categoriesTitle p a {
+      color: darkgray; }
+      section .categories .categoriesTitle p a:hover {
+        color: orange; }
   section h2, section h3 {
     margin: 0 0 15px 0; }
   section h2 {
@@ -153,5 +164,17 @@ a {
   a:hover {
     color: orange;
     text-decoration: underline; }
+
+footer {
+  background-color: #2E2E2E;
+  width: 100%;
+  padding: 25px 20px; }
+  footer p {
+    font-size: 12px;
+    font-weight: 100;
+    color: #666666;
+    display: inline-block; }
+  footer .templates {
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */

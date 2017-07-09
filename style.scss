@@ -160,7 +160,7 @@ section {
   margin-bottom: 15px;
   .articles {
     overflow: hidden;
-    .first{
+    .first {
       margin-bottom: 15px;
     }
     article {
@@ -183,6 +183,26 @@ section {
       .text {
         margin-left: 200px;
 
+      }
+    }
+  }
+  .categories {
+    .categoriesTitle {
+      p {
+        border-bottom: 1px dashed darkgray;
+        i{
+          font-size: 6px;
+          position: relative;
+          top:-3px;
+          color: orange;
+
+        }
+        a {
+          color: darkgray;
+          &:hover{
+            color: orange;
+          }
+        }
       }
     }
   }
@@ -217,5 +237,20 @@ a {
   &:hover {
     color: orange;
     text-decoration: underline;
+  }
+}
+
+footer{
+  background-color: #2E2E2E;
+  width: 100%;
+  padding: 25px 20px;
+  p {
+    font-size: 12px;
+    font-weight: 100;
+    color: #666666;
+    display: inline-block;
+  }
+  .templates{
+    float: right;
   }
 }
