@@ -45,19 +45,23 @@ header {
       header .topNav a:last-child {
         padding-right: 0; }
 
+.placeholder {
+  background-color: #2E2E2E;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  .placeholder .size {
+    color: white; }
+
 #container {
   overflow: hidden;
   margin-top: 70px; }
-  #container .placeholder {
-    background-color: #2E2E2E;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  #container .placeholder.heroImg {
     max-width: 960px;
     height: 360px;
-    margin-top: 15px;
-    overflow: hidden; }
-    #container .placeholder span {
+    margin-top: 15px; }
+    #container .placeholder.heroImg span {
       color: white;
       font-size: 20px;
       display: block;
@@ -65,7 +69,8 @@ header {
   #container .info {
     margin-top: 30px;
     overflow: hidden;
-    padding: 20px 0; }
+    padding: 20px 0;
+    border-bottom: 1px solid darkgrey; }
     #container .info .post .postHeader {
       overflow: hidden;
       display: flex;
@@ -94,5 +99,18 @@ header {
         color: orange; }
         #container .info .post .postContent a:after {
           content: " \00BB"; }
+  #container .poster {
+    border-bottom: 1px solid darkgrey;
+    overflow: hidden; }
+    #container .poster .img-thumbnail {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    #container .poster .placeholder {
+      height: 180px; }
+      #container .poster .placeholder .size {
+        margin-top: 90px;
+        font-size: 15px;
+        display: block; }
 
 /*# sourceMappingURL=style.css.map */

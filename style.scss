@@ -59,19 +59,25 @@ header {
   }
 }
 
+.placeholder {
+  background-color: #2E2E2E;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  .size {
+    color: white;
+  }
+}
+
 #container {
-  //background-color: red;
+  //background-color: darkgrey;
   overflow: hidden;
   margin-top: 70px;
-  .placeholder {
-    background-color: #2E2E2E;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  .placeholder.heroImg {
     max-width: 960px;
     height: 360px;
     margin-top: 15px;
-    overflow: hidden;
     span {
       color: white;
       font-size: 20px;
@@ -84,36 +90,38 @@ header {
     margin-top: 30px;
     overflow: hidden;
     padding: 20px 0;
+    border-bottom: 1px solid darkgrey;
+    //margin-bottom: 30px;
     .post {
-      .postHeader{
+      .postHeader {
         overflow: hidden;
         display: flex;
         align-items: center;
       }
-      .thumbnail{
+      .thumbnail {
         width: 32px;
         height: 32px;
         background-color: #2E2E2E;
         margin-bottom: 0;
         border: none;
 
-        .size{
+        .size {
           color: white;
           font-size: 8px;
           text-align: center;
           display: block;
         }
       }
-      h3{
+      h3 {
         display: block;
         font-size: 15px;
-        margin:0;
+        margin: 0;
         font-weight: bold;
         margin-left: 10px;
       }
-      .postContent{
+      .postContent {
         margin-top: 5px;
-        a{
+        a {
           float: right;
           color: orange;
           &:after {
@@ -124,4 +132,23 @@ header {
       }
     }
   }
+  .poster {
+    border-bottom: 1px solid darkgrey;
+    overflow: hidden;
+    .img-thumbnail {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .placeholder {
+      height: 180px;
+
+      .size {
+        margin-top: 90px;
+        font-size: 15px;
+        display: block;
+      }
+    }
+  }
+
 }
