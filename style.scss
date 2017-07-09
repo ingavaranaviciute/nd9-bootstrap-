@@ -13,6 +13,7 @@ body {
 }
 
 header {
+  z-index: 1;
   overflow: hidden;
   width: 100%;
   background-color: #2E2E2E;
@@ -71,7 +72,7 @@ header {
 }
 
 #container {
-  //background-color: darkgrey;
+  //background-color: green;
   overflow: hidden;
   margin-top: 70px;
   .placeholder.heroImg {
@@ -135,6 +136,7 @@ header {
   .poster {
     border-bottom: 1px solid darkgrey;
     overflow: hidden;
+
     .img-thumbnail {
       display: block;
       margin-top: 15px;
@@ -150,5 +152,70 @@ header {
       }
     }
   }
+}
 
+section {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .articles {
+    overflow: hidden;
+    .first{
+      margin-bottom: 15px;
+    }
+    article {
+      overflow: hidden;
+
+      //margin-top: 15px;
+      //margin-bottom: 15px;
+      .img-thumbnail {
+        float: left;
+
+        .placeholder {
+          height: 150px;
+          width: 180px;
+          .size {
+            margin-top: 70px;
+            display: block;
+          }
+        }
+      }
+      .text {
+        margin-left: 200px;
+
+      }
+    }
+  }
+
+  h2, h3 {
+    margin: 0 0 15px 0;
+  }
+
+  h2 {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 15px;
+  }
+
+}
+
+p, h2, h3 {
+  color: darkgray;
+}
+
+.readMore {
+  text-align: right;
+  a {
+    &:after {
+      content: " \00BB";
+
+    }
+  }
+}
+
+a {
+  color: orange;
+  &:hover {
+    color: orange;
+    text-decoration: underline;
+  }
 }

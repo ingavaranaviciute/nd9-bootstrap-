@@ -10,6 +10,7 @@ body {
   margin: 0; }
 
 header {
+  z-index: 1;
   overflow: hidden;
   width: 100%;
   background-color: #2E2E2E;
@@ -112,5 +113,45 @@ header {
         margin-top: 90px;
         font-size: 15px;
         display: block; }
+
+section {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  section .articles {
+    overflow: hidden; }
+    section .articles .first {
+      margin-bottom: 15px; }
+    section .articles article {
+      overflow: hidden; }
+      section .articles article .img-thumbnail {
+        float: left; }
+        section .articles article .img-thumbnail .placeholder {
+          height: 150px;
+          width: 180px; }
+          section .articles article .img-thumbnail .placeholder .size {
+            margin-top: 70px;
+            display: block; }
+      section .articles article .text {
+        margin-left: 200px; }
+  section h2, section h3 {
+    margin: 0 0 15px 0; }
+  section h2 {
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 15px; }
+
+p, h2, h3 {
+  color: darkgray; }
+
+.readMore {
+  text-align: right; }
+  .readMore a:after {
+    content: " \00BB"; }
+
+a {
+  color: orange; }
+  a:hover {
+    color: orange;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
