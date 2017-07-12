@@ -19,7 +19,7 @@ header {
   background-color: #2E2E2E;
   padding: 15px;
   position: fixed;
-  opacity: .7;
+  opacity: .9;
   &:hover {
     opacity: 1;
   }
@@ -47,6 +47,11 @@ header {
     float: right;
     font-size: 10px;
     padding: 10px 10px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     a {
       color: grey;
       text-decoration: none;
@@ -93,6 +98,9 @@ header {
     padding: 20px 0;
     border-bottom: 1px solid darkgrey;
     //margin-bottom: 30px;
+    @media (max-width: 767px){
+      margin-top: 0;
+    }
     .post {
       .postHeader {
         overflow: hidden;
@@ -122,8 +130,14 @@ header {
       }
       .postContent {
         margin-top: 5px;
+        p {
+          @media (max-width: 767px) {
+            text-align: justify;
+          }
+        }
         a {
-          float: right;
+          text-align: right;
+          display: block;
           color: orange;
           &:after {
             content: " \00BB";
@@ -141,9 +155,15 @@ header {
       display: block;
       margin-top: 15px;
       margin-bottom: 15px;
+
     }
     .placeholder {
       height: 180px;
+      @media (max-width: 767px) {
+        display: block;
+        margin: auto;
+        float: none;
+      }
 
       .size {
         margin-top: 90px;
@@ -170,10 +190,22 @@ section {
       //margin-bottom: 15px;
       .img-thumbnail {
         float: left;
+        @media (max-width: 767px) {
+          width: 190px;
+          margin: auto;
+          float: none;
+          display: block;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin-right: 15px;
+        }
 
         .placeholder {
           height: 150px;
           width: 180px;
+          //@media(max-width: 767px){
+          //  width: 100%;
+          //}
           .size {
             margin-top: 70px;
             display: block;
@@ -182,24 +214,42 @@ section {
       }
       .text {
         margin-left: 200px;
+        @media (max-width: 768px) {
+          margin-left: 0;
+        }
+
+        h3 {
+          @media (max-width: 768px) {
+            margin: 15px 0 15px 0;
+            text-align: center;
+          }
+        }
 
       }
     }
   }
   .categories {
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: 15px;
+    }
+    h2 {
+      @media (min-width: 768px) and (max-width: 991px) {
+        text-align: center;
+      }
+    }
     .categoriesTitle {
       p {
         border-bottom: 1px dashed darkgray;
-        i{
+        i {
           font-size: 6px;
           position: relative;
-          top:-3px;
+          top: -3px;
           color: orange;
 
         }
         a {
           color: darkgray;
-          &:hover{
+          &:hover {
             color: orange;
           }
         }
@@ -209,6 +259,7 @@ section {
 
   h2, h3 {
     margin: 0 0 15px 0;
+
   }
 
   h2 {
@@ -225,6 +276,7 @@ p, h2, h3 {
 .readMore {
   text-align: right;
   a {
+    text-align: right;
     &:after {
       content: " \00BB";
 
@@ -240,17 +292,31 @@ a {
   }
 }
 
-footer{
+footer {
   background-color: #2E2E2E;
   width: 100%;
-  padding: 25px 20px;
   p {
     font-size: 12px;
     font-weight: 100;
     color: #666666;
     display: inline-block;
+    @media (max-width: 767px){
+      text-align: center;
+      font-size: 10px;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
   }
-  .templates{
+  .templates {
     float: right;
+    @media (max-width: 767px){
+      text-align: center;
+      font-size: 10px;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
   }
+
 }

@@ -16,7 +16,7 @@ header {
   background-color: #2E2E2E;
   padding: 15px;
   position: fixed;
-  opacity: .7;
+  opacity: .9;
   top: 0; }
   header:hover {
     opacity: 1; }
@@ -38,6 +38,9 @@ header {
     float: right;
     font-size: 10px;
     padding: 10px 10px; }
+    @media (max-width: 767px) {
+      header .topNav {
+        display: none; } }
     header .topNav a {
       color: grey;
       text-decoration: none;
@@ -72,6 +75,9 @@ header {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid darkgrey; }
+    @media (max-width: 767px) {
+      #container .info {
+        margin-top: 0; } }
     #container .info .post .postHeader {
       overflow: hidden;
       display: flex;
@@ -95,8 +101,12 @@ header {
       margin-left: 10px; }
     #container .info .post .postContent {
       margin-top: 5px; }
+      @media (max-width: 767px) {
+        #container .info .post .postContent p {
+          text-align: justify; } }
       #container .info .post .postContent a {
-        float: right;
+        text-align: right;
+        display: block;
         color: orange; }
         #container .info .post .postContent a:after {
           content: " \00BB"; }
@@ -109,6 +119,11 @@ header {
       margin-bottom: 15px; }
     #container .poster .placeholder {
       height: 180px; }
+      @media (max-width: 767px) {
+        #container .poster .placeholder {
+          display: block;
+          margin: auto;
+          float: none; } }
       #container .poster .placeholder .size {
         margin-top: 90px;
         font-size: 15px;
@@ -126,6 +141,15 @@ section {
       overflow: hidden; }
       section .articles article .img-thumbnail {
         float: left; }
+        @media (max-width: 767px) {
+          section .articles article .img-thumbnail {
+            width: 190px;
+            margin: auto;
+            float: none;
+            display: block; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          section .articles article .img-thumbnail {
+            margin-right: 15px; } }
         section .articles article .img-thumbnail .placeholder {
           height: 150px;
           width: 180px; }
@@ -134,6 +158,19 @@ section {
             display: block; }
       section .articles article .text {
         margin-left: 200px; }
+        @media (max-width: 768px) {
+          section .articles article .text {
+            margin-left: 0; } }
+        @media (max-width: 768px) {
+          section .articles article .text h3 {
+            margin: 15px 0 15px 0;
+            text-align: center; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    section .categories {
+      margin-top: 15px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    section .categories h2 {
+      text-align: center; } }
   section .categories .categoriesTitle p {
     border-bottom: 1px dashed darkgray; }
     section .categories .categoriesTitle p i {
@@ -156,8 +193,10 @@ p, h2, h3 {
 
 .readMore {
   text-align: right; }
-  .readMore a:after {
-    content: " \00BB"; }
+  .readMore a {
+    text-align: right; }
+    .readMore a:after {
+      content: " \00BB"; }
 
 a {
   color: orange; }
@@ -167,14 +206,27 @@ a {
 
 footer {
   background-color: #2E2E2E;
-  width: 100%;
-  padding: 25px 20px; }
+  width: 100%; }
   footer p {
     font-size: 12px;
     font-weight: 100;
     color: #666666;
     display: inline-block; }
+    @media (max-width: 767px) {
+      footer p {
+        text-align: center;
+        font-size: 10px;
+        display: block;
+        padding: 0;
+        margin: 0; } }
   footer .templates {
     float: right; }
+    @media (max-width: 767px) {
+      footer .templates {
+        text-align: center;
+        font-size: 10px;
+        display: block;
+        padding: 0;
+        margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
